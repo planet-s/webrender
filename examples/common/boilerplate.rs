@@ -118,7 +118,7 @@ pub fn main_wrapper<E: Example>(
     let mut events_loop = winit::EventsLoop::new();
     let context_builder = glutin::ContextBuilder::new()
         .with_gl(glutin::GlRequest::GlThenGles {
-            opengl_version: (3, 2),
+            opengl_version: (3, 0),
             opengles_version: (3, 0),
         });
     let window_builder = winit::WindowBuilder::new()

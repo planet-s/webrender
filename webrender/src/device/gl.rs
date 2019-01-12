@@ -77,7 +77,7 @@ impl Add<usize> for GpuFrameId {
     }
 }
 
-const SHADER_VERSION_GL: &str = "#version 150\n";
+const SHADER_VERSION_GL: &str = "#version 140\n";
 const SHADER_VERSION_GLES: &str = "#version 300 es\n";
 
 const SHADER_KIND_VERTEX: &str = "#define WR_VERTEX_SHADER\n";
