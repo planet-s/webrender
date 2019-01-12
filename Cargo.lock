@@ -563,7 +563,7 @@ dependencies = [
 [[package]]
 name = "glutin"
 version = "0.19.0"
-source = "git+https://gitlab.redox-os.org/redox-os/glutin.git?branch=redox#2a5b1ab2e49de9a3ae630d7a1232341b682d8958"
+source = "git+https://gitlab.redox-os.org/redox-os/glutin.git?branch=redox#0a1c5d4e6f0a7f2b22a9e3b9c132b3a0fac40f8b"
 dependencies = [
  "android_glue 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "cgl 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
@@ -1941,7 +1941,7 @@ dependencies = [
 [[package]]
 name = "winit"
 version = "0.18.0"
-source = "git+https://gitlab.redox-os.org/redox-os/winit.git?branch=redox#2225c343bfebdb795495a5fc4944b4360c676d68"
+source = "git+https://gitlab.redox-os.org/redox-os/winit.git?branch=redox#39c7618ab68ee1a2c4a2a029ec5146488a3a0389"
 dependencies = [
  "android_glue 0.2.3 (registry+https://github.com/rust-lang/crates.io-index)",
  "backtrace 0.3.13 (registry+https://github.com/rust-lang/crates.io-index)",
