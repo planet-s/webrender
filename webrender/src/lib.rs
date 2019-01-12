@@ -125,7 +125,7 @@ pub use record::{ApiRecordingReceiver, BinaryRecorder, WEBRENDER_RECORDING_HEADE
 mod platform {
     #[cfg(target_os = "macos")]
     pub use platform::macos::font;
-    #[cfg(any(target_os = "android", all(unix, not(target_os = "macos"))))]
+    #[cfg(any(target_os = "android", all(unix, not(target_os = "macos")), target_os = "redox"))]
     pub use platform::unix::font;
     #[cfg(target_os = "windows")]
     pub use platform::windows::font;
@@ -134,7 +134,7 @@ mod platform {
     pub mod macos {
         pub mod font;
     }
-    #[cfg(any(target_os = "android", all(unix, not(target_os = "macos"))))]
+    #[cfg(any(target_os = "android", all(unix, not(target_os = "macos")), target_os = "redox"))]
     pub mod unix {
         pub mod font;
     }
@@ -151,9 +151,9 @@ extern crate core_graphics;
 #[cfg(target_os = "macos")]
 extern crate core_text;
 
-#[cfg(all(unix, not(target_os = "macos")))]
+#[cfg(any(all(unix, not(target_os = "macos")), target_os = "redox"))]
 extern crate freetype;
-#[cfg(all(unix, not(target_os = "macos")))]
+#[cfg(any(all(unix, not(target_os = "macos")), target_os = "redox"))]
 extern crate libc;
 
 #[cfg(target_os = "windows")]

@@ -61,7 +61,7 @@ app_units = "0.7"
 env_logger = "0.5"
 euclid = "0.19"
 gleam = "0.6.2"
-glutin = "0.17"
+glutin = { git = "https://gitlab.redox-os.org/redox-os/glutin.git", branch = "redox" }
 rayon = "1"
 webrender = { path = "../webrender" }
-winit = "0.16"
+winit = { git = "https://gitlab.redox-os.org/redox-os/winit.git", branch = "redox" }
