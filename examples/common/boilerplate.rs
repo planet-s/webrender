@@ -33,7 +33,7 @@ impl RenderNotifier for Notifier {
     }
 
     fn wake_up(&self) {
-        #[cfg(not(target_os = "android"))]
+        #[cfg(not(any(target_os = "android", target_os = "redox")))]
         let _ = self.events_proxy.wakeup();
     }
 
